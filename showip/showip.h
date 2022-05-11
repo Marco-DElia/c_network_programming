@@ -232,7 +232,10 @@ struct ip_pool *fill_ip_pool(struct ip_pool *pool, char *node, struct error *err
 
     freeaddrinfo(res);
 
-    return c_pool;
+
+    pool = c_pool;
+
+    return pool;
 }
 
 #endif
